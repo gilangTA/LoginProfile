@@ -67,8 +67,8 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
     @Override
     public void redirectToProfile() {
             Intent intent = new Intent(activity, ProfileActivity.class);
-            intent.putExtra("username",etUsername.getText());
-            intent.putExtra("password",etPassword.getText());
+            intent.putExtra("username",etUsername.getText().toString());
+            intent.putExtra("password",etPassword.getText().toString());
             startActivity(intent);
             activity.finish();
     }
